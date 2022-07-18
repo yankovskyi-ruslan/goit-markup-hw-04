@@ -7,6 +7,8 @@
   --logo-footer-color: #ffffff;
   --filter-button: #f5f4fa;
   --card-border: #eeeeee;
+  --icons-basic-color: #afb1b8;
+  --icons-secondary-color: #757575;
 }
 
 .body {
@@ -20,6 +22,7 @@
 .features-list,
 .specialization-list,
 .team-list,
+.icons-list,
 .adds-list,
 .filters-list,
 .portfolio-list {
@@ -43,7 +46,8 @@ p {
 .team-list,
 .adds-list,
 .filters-list,
-.portfolio-list {
+.portfolio-list,
+.icons-list {
   padding: 0;
   margin: 0;
 }
@@ -327,12 +331,30 @@ img {
   text-align: center;
 }
 .team-txt {
+  margin-bottom: 16px;
+
   color: var(--text-color);
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 /* Footer */
