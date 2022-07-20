@@ -170,9 +170,6 @@ img {
 .link-tel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 161px;
-  height: 16px;
   color: var(--icons-secondary-color);
 }
 .mail-icons,
@@ -196,17 +193,26 @@ img {
 
 .section-hero {
   padding: 200px 0;
+
   background-image: url(../images/img-hero-sq.jpeg);
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.section-hero:hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-hero-sq.jpeg);
+}
 .conteiner-hero {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 .hero-title {
   width: 696px;
   margin: auto;
@@ -413,7 +419,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -453,10 +459,11 @@ img {
 .footer-conteiner {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   background-color: var(--bgc-secondary);
-  gap: 70px;
+}
+.conteiner-adds {
+  margin-right: 70px;
 }
 
 .footer-logo {
